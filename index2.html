@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!--<script src="main.js"></script> -->
+</head>
+<body>
+    <nav>
+    <div class="logo"> SBM-Consulting Inc </div>
+    <ul class = "nav-links">
+        <li>
+            <!--<a href="http://www.yahoo.com" onmouseover="window.location=this.href">Our Vision</a>-->
+            <a href='C:\Users\shob\Desktop\Vicks\Page2.html'>About Us</a>
+             <ul>
+                <li><a href="#">Our Vision</a></li>
+             </ul>
+            <!--<iframe id='ifrm1' name='ifrm1' src='https://www.yahoo.ca'></iframe>-->
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Business Lines</a>
+            <ul> <!--</ul> class = "nav-sub-links"> -->
+            <li><a href="#">Business</a></li>
+            <li><a href="https://www.google.com">Information Technology</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Government Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Job Seekers</a>
+            <ul> <!-- class = "nav-sub-links"> -->
+                <li><a href="#">Search Jobs</a></li>
+                <li><a href="#">Create Profile</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Key Industries</a>
+            <ul> <!--- class = "nav-sub-links"> -->
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Government Services</a></li>
+            </ul>
+        </li>
+        <li><a href='https://yahoo.com'>Resources</a>
+            <ul> <!--class = "nav-sub-links"> -->
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Government Services</a></li>
+            </ul>
+        </li> 
+    </ul>
+    </nav>
+    <div class="container">
+
+    <form class ="login form login-form--hidden" id="login" method="post">
+        <h3>Login</h3>
+        <!--<form action="" method="post"> -->
+        <p>Username</p>
+        <input type ="text" id="username" placeholder="">
+        <p>Password</p>
+        <input type="password" id="password" placeholder=""> <br><br>
+        <!--<button type="submit" onclick="document.getElementById('login').submit();">Login</button><br><br>-->
+        <!--<button type="submit" onclick="myFunction()"> Sign-in</button> <br><br> -->
+        <button type="submit" onclick="myFunction();"> Sign-in</button> <br><br> 
+        <a href ='#'style="text-decoration:none;" id="linkCreateAccount"><p>Don't Have an Account?</p></a>
+    </form>
+
+    <form class ="sign-up" id="s-up" method="post" action="Page2.html">
+        <h3>Sign-up</h3>
+        <p>Username</p>
+        <input type ="text" id="username1" placeholder="">
+        <p>email</p>
+        <input type ="email" id="email" placeholder="">
+        <p>Password</p>
+        <input type="password" id="password1" placeholder=""> <br><br>
+        <!--<button type="submit" onclick="CreateAccount()"> Create Account</button> -->
+        <button type="submit" onclick="document.getElementById('s-up').submit();">Create Account</button>
+        <!--<a href ='#'style="text-decoration:none;" id="HaveAccount"><p>Already Have an Account?</p></a>-->
+        <a href style="text-decoration:none;" id="HaveAccount"><p>Already Have an Account?</p></a>
+    </form>
+    </div> 
+    
+    <script>
+        function myFunction(){
+        tex1 = document.getElementById("username").value;
+        text2 = document.getElementById("password").value;
+        const loginer = form.action;
+
+        if ((tex1 != "") && (text2 != "")) 
+            {
+         loginer = "register.html";
+        /*return true;*/
+      }
+       
+        else {
+         window.alert("Incorrect username/password combination. Sorry, try Again!");
+           }
+      }
+        function CreateAccount(){
+        text3 = document.getElementById("username1").value;
+        text4 = document.getElementById("email").value;
+        text5 = document.getElementById("password1").value;
+        if ((tex3 != "") && (text4 != "") && (text5 != "")) 
+        {
+            window.location.href = 'Page2.html';
+        }
+        else {
+         window.alert("Incorrect username/password combination. Sorry, try Again!");
+           }
+        }
+    </script> 
+     <script src = "main.js"></script>
+         
+</body>
+</html>

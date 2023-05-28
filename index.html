@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+    <div class="logo"> SBM-Consulting Inc </div>
+    <ul class = "nav-links">
+        <li>
+            <a href="#">About Us</a>
+             <ul>
+                <li><a href='C:\Users\shob\Desktop\Vicks\Page3.html'>Our Vision</a></li>
+             </ul>
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Business Lines</a>
+            <ul> 
+            <li><a href="#">Business</a></li>
+            <li><a href="https://www.google.com">Information Technology</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Government Services</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Job Seekers</a>
+            <ul> <!-- class = "nav-sub-links"> -->
+                <li><a href="#">Search Jobs</a></li>
+                <li><a href="#">Create Profile</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href='https://yahoo.com'>Key Industries</a>
+            <ul> <!--- class = "nav-sub-links"> -->
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Government Services</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <div class="container">
+
+    <form class ="login form login-form--hidden" id="loginfm" method="post" action="Page2.html">
+        <h3>Login</h3>
+        <!--<form action="" method="post"> -->
+        <p>Username</p>
+        <input type ="text" id="username" name = "username" placeholder="">
+        <p>Password</p>
+        <input type="password" id="password" name="password" placeholder=""> <br><br>
+        <button type="submit" id = "but" disabled="disabled">Sign-in</button> <br><br>
+        <script> 
+        
+            loginfm.addEventListener('input', ()=> {
+                if((username.value.length > 0) && (password.value.length > 0)) {
+                    but.removeAttribute('disabled');
+                }
+                else {
+                    but.setAttribute('disabled');
+                }
+            });
+
+            /*const inputElt = document.getElementById('username');
+            const inputElt2 = document.getElementById('password1');
+            const Submitbutton = document.getElementById('but1');
+           
+            if ( inPutElt == "")  {
+            Submitbutton.disabled = true;
+           }
+
+         /*  inputElt.AddEventListener("keyup", (e) => {
+           const value = e.currentTarget.value;
+           if (value !== ""){
+           Submitbutton.disabled = false;
+           }
+        });*/
+        /*inputElt2.AddEventListener ("keyup", (e) => {
+           const value2 = e.currentTarget.value;
+           Submitbutton.disabled = false;
+           
+            if ( value2 === "")  {
+            Submitbutton.disabled = false;
+           }
+        });*/
+           </script>
+        <a href ='#'style="text-decoration:none;" id="linkCreateAccount"><p>Don't Have an Account?</p></a>
+    </form>
+
+    <form class ="sign-up" id="s-up" method="post" action="Page2.html">
+        <h3>Sign-up</h3>
+        <p>Username</p>
+        <input type ="text" id="username1" placeholder="">
+        <p>email</p>
+        <input type ="email" id="email" placeholder="">
+        <p>Password</p>
+        <input type="password" id="password1" placeholder=""> <br><br>
+        <!--<button type="submit" onclick="CreateAccount()"> Create Account</button> -->
+        <button type="submit" onclick="document.getElementById('s-up').submit();">Create Account</button>
+        <!--<a href ='#'style="text-decoration:none;" id="HaveAccount"><p>Already Have an Account?</p></a>-->
+        <a href style="text-decoration:none;" id="HaveAccount"><p>Already Have an Account?</p></a>
+    </form>
+    </div> 
+    
+     <script src = "main.js"></script>
+         
+</body>
+</html>
+
