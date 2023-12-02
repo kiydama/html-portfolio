@@ -69,44 +69,15 @@ nav{
 }
 
 
-/*a:hover + .box,.box:hover{
-    display: block;
-    position: relative;
-    z-index: 100;
-} */
-
 .nav-links a{
     font-family: 'Poppins', sans-serif; font-size: 14px;
     color:rgb(227, 204, 238);
     letter-spacing: 3px;
     text-decoration: none;
 }
-#ifrm1 {
-    opacity: 0;
-    transition: opacity 1.5s linear;
-  }
-  #trig1:hover + iframe {
-    opacity: 1;
-    transition: opacity 1.5s linear;
-  }
- 
-/*#iframe_1 {
-    opacity: 0;
-    transition: opacity 1.5s linear;
-  }
-  #trig1:hover + iframe {
-    opacity: 1;
-    transition: opacity 1.5s linear;
-    z-index: 5;
-  }*/
 
-/*
-.nav-links a:hover + .box, .box:hover {
-    display: block;
-    position: relative;
-    z-index: 100;
-    
-}*/
+
+
 /*
 .nav-links a:hover {
     display: block;
