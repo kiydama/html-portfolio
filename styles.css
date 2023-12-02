@@ -1,8 +1,3 @@
-/*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}*/
 
 h1  {
 color:gold;
@@ -76,17 +71,20 @@ nav{
     text-decoration: none;
 }
 
-
-
-/*
 .nav-links a:hover {
     display: block;
+    background-color: #f2f2f2;
     position: relative;
     z-index: 100;
     transition: 0.5s;
     
 }
-*/
+
+.nav-links li:hover > ul {
+    display:block;
+}
+
+
 .nav-links li ul{
     display:none;
     position: absolute; 
@@ -104,19 +102,7 @@ nav{
     background-color:rgb(44, 100, 119);
     border-radius: 8px;
 }
-/*.login form {
-    position:absolute;
-    padding-left: 26px;
-    padding-right: 26px;
-    padding-bottom: 20px;
-    height: 305px;
-    top:63%;
-    left:50%;
-    text-transform: uppercase;
-    transform: translate(-50%,-50%);
-    background-color:rgb(44, 100, 119);
-    border-radius: 8px;
-}*/
+
 .login-form--hidden{
     display:none;
 }
@@ -126,22 +112,6 @@ nav{
     background-color: rgb(180, 190, 218);          /*curvature of edges of input fields*/
 }
 
-.nav-links li:hover > ul {
-    display:block;
-}
-/*.sign-up {
-    position:absolute;
-    padding-left: 26px;
-    padding-right: 26px;
-    padding-bottom: 20px;
-    height: 305px;
-    top:63%;
-    left:50%;
-    text-transform: uppercase;
-    transform: translate(-50%,-50%);
-    background-color:rgb(44, 100, 119);
-    border-radius: 8px;
-}*/
 .sign-up input 
 {
     border-radius: 7px; 
