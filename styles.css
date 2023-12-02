@@ -73,7 +73,7 @@ nav{
 
 .nav-links a:hover {
     display: block;
-    background-color: #f2f2f2;
+    background-color: Red;
     position: relative;
     z-index: 100;
     transition: 0.5s;
